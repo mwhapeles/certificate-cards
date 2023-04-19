@@ -1,5 +1,5 @@
 // Check JS is Connected
-console.log('👍 JS Connected');
+//console.log('👍 JS Connected');
 
 // get all the card
 document.querySelectorAll('.card').forEach( item => {

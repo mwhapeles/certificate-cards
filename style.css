@@ -29,7 +29,7 @@ body {
     height: 100%;
     position: relative;
 
-    cursor: pointer;
+    cursor: grab;
     transition: transform 1s;
 
     /* preserve child 3d   */
@@ -47,11 +47,11 @@ body {
 }
 
 .front {
-    background: coral;
+    background: rgb(232, 0, 0);
 }
 
 .back {
-    background: cornflowerblue;
+    background: rgb(204, 209, 218);
     /* flip it default   */
     transform: rotateY(180deg);
 }
@@ -64,7 +64,7 @@ body {
 }
 
 /* Media Query for Mobile */
-@media only screen and (max-width: 30em){ 
+@media only screen and (max-width: 50em){ 
     
     /* Diagnostic Styling. Delete When Done. */
     body:before {
