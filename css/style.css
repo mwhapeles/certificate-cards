@@ -1,18 +1,11 @@
-@font-face {
-    font-family: 'Outfit-Medium';
-    src: url('../fonts/Outfit-Medium.woff2') format('woff2'),
-         url('../fonts/Outfit-Medium.woff') format('woff'),
-         url('../fonts/Outfit-Medium.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: normal;
-  }
+@import url(outfit.css);
+@import url(switzer.css);
 
-/* diagnostic styling */
+/* diagnostic styling 
 * {
     outline: 1px dotted gray;
 }
-
+*/
 /* layout */
 body {
     display: flex;
@@ -22,7 +15,8 @@ body {
 }
 
 h2{
-    font-family: 'Outfit-Medium';
+    font-family: Outift;
+    font-size: medium;
     color: #ECF7DD;
 }
 /* scene */
@@ -47,6 +41,7 @@ h2{
 
     /* preserve child 3d   */
     transform-style: preserve-3d;
+    border-radius: 20% 20% 20% 20%;
 }
 
 /* face */
@@ -54,7 +49,7 @@ h2{
     position: absolute;
     height: 100%;
     width: 100%;
-
+   
     /* hide back face   */
     backface-visibility: hidden;
 }
@@ -69,13 +64,20 @@ img {
 }
 
 .front {
+    font-family: Outift;
+    font-size: medium;
+    color: #ECF7DD;
     background: #5792CF;
+    border-radius: 5% 5% 5% 5%;
+    filter: drop-shadow(0rem .25rem 0rem #0D56D9);
 }
 
 .back {
-    background: rgb(204, 209, 218);
+    background:#dcf8ff;
     /* flip it default   */
     transform: rotateY(180deg);
+    border-radius: 5% 5% 5% 5%;
+    filter: drop-shadow(0rem .25rem 0rem #0D56D9);
 }
 
 /* flip card
@@ -90,11 +92,11 @@ img {
 /* Media Query for Mobile */
 @media only screen and (max-width: 50em){ 
     
-    /* Diagnostic Styling. Delete When Done. */
+    /* Diagnostic Styling. Delete When Done. 
     body:before {
          background: yellow;
          content: "Mobile Size";
-    }
+    }*/
 
     body {
         display: flex;
