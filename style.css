@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Outfit-Medium';
+    src: url('../fonts/Outfit-Medium.woff2') format('woff2'),
+         url('../fonts/Outfit-Medium.woff') format('woff'),
+         url('../fonts/Outfit-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+
 /* diagnostic styling */
 * {
     outline: 1px dotted gray;
@@ -11,7 +21,10 @@ body {
     height: 100vh;
 }
 
-
+h2{
+    font-family: 'Outfit-Medium';
+    color: #ECF7DD;
+}
 /* scene */
 .scene {
     width: 300px;
@@ -46,8 +59,17 @@ body {
     backface-visibility: hidden;
 }
 
+img {
+    display:flex;
+    margin:auto;
+    align-content: center;
+    max-width: 90%;
+    max-height: 90%;
+
+}
+
 .front {
-    background: rgb(232, 0, 0);
+    background: #5792CF;
 }
 
 .back {
@@ -62,6 +84,8 @@ body {
 .flipped {
     transform: rotateY(180deg);
 }
+
+
 
 /* Media Query for Mobile */
 @media only screen and (max-width: 50em){ 
