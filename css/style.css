@@ -14,11 +14,17 @@ body {
     height: 100vh;
 }
 
-h2{
-    font-family: Outift;
-    font-size: medium;
+h2{ display: block;
+    font-family: 'Switzer';
     color: #ECF7DD;
 }
+
+p {
+font-family:'Switzer-Medium';
+
+
+}
+
 /* scene */
 .scene {
     width: 300px;
@@ -64,9 +70,6 @@ img {
 }
 
 .front {
-    font-family: Outift;
-    font-size: medium;
-    color: #ECF7DD;
     background: #5792CF;
     border-radius: 5% 5% 5% 5%;
     filter: drop-shadow(0rem .25rem 0rem #0D56D9);
@@ -102,5 +105,79 @@ img {
         display: flex;
         flex-direction: column;
     }
+
+    p { 
+        font-size: x-small;
+
+        }
+
+    h2{
+        font-size: medium;
+    }
+    .scene {
+        width: 50%;
+        height: 70%;
+        /* space between card-scenes */
+        margin: 3%;
     
+        /* set perspective   */
+        perspective: 600px;
+    }
+    
+    /* card */
+    .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    
+        cursor: grab;
+        transition: transform 1s;
+    
+        /* preserve child 3d   */
+        transform-style: preserve-3d;
+        border-radius: 20% 20% 20% 20%;
+    }
+    
+    /* face */
+    .face {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+       
+        /* hide back face   */
+        backface-visibility: hidden;
+    }
+    
+    img {
+        display:flex;
+        margin:auto;
+        align-content: center;
+        max-width: 40%;
+        max-height: 40%;
+    
+    }
+    
+    .front {
+        background: #5792CF;
+        border-radius: 5% 5% 5% 5%;
+        filter: drop-shadow(0rem .25rem 0rem #0D56D9);
+    }
+    
+    .back {
+        background:#dcf8ff;
+        /* flip it default   */
+        transform: rotateY(180deg);
+        border-radius: 5% 5% 5% 5%;
+        filter: drop-shadow(0rem .25rem 0rem #0D56D9);
+    }
+    
+    /* flip card
+      * toggle with JS
+      */
+    .flipped {
+        transform: rotateY(180deg);
+    }
 }
+
+
+
