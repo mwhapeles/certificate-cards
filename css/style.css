@@ -1,3 +1,4 @@
+@import url(outfit.css);
 @import url(satoshi.css);
 
 /* diagnostic styling 
@@ -72,7 +73,7 @@ img {
 .title{
     text-align:center;
    max-width: 80%;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Outfit-Regular';
     color: #ECF7DD;
 
 
@@ -87,7 +88,9 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
 }
 
 .description {
-    max-width:90%;
+    max-width:80%;
+    font-family:'Satoshi-Light';
+    line-break: loose;
 
 }
 
@@ -110,7 +113,7 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
 
 
 /* Media Query for Mobile */
-@media only screen and (max-width: 50em){ 
+@media only screen and (max-width: 56em){ 
     
     /* Diagnostic Styling. Delete When Done. 
     body:before {
@@ -136,7 +139,7 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
         width: 70%;
         height: 200%;
         /* space between card-scenes */
-        margin: 3%;
+        margin: 5%;
     
         /* set perspective   */
         perspective: 600px;
@@ -144,8 +147,8 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
     
     /* card */
     .card {
-        width: 90%;
-        height: 100%;
+        width: 95%;
+        height: 120%;
         position: relative;
     
         cursor: grab;
@@ -174,6 +177,10 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
         max-height: 40%;
     
     }
+.title {
+    font-family: 'Satoshi-Regular';
+}
+
     
     .front {
         text-align:center;
@@ -183,7 +190,10 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
     }
     
     .description {
+        font-family:'Satoshi-Light';
+        line-height: 80%;
         max-width:90%;
+        max-height: 100;
     
     }
 
