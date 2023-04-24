@@ -70,6 +70,14 @@ img {
 
 }
 
+
+#pro{
+    max-width: 1080px;
+    max-height: 1080px;
+}
+
+
+
 .title{
     text-align:center;
    max-width: 80%;
