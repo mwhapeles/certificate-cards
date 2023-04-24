@@ -189,6 +189,12 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
     font-family: 'Satoshi-Regular';
 }
 
+
+#pro{
+    display:block;
+    max-width: 50%;
+    max-height: 50%;
+}
     
     .front {
         text-align:center;
