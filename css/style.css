@@ -114,7 +114,7 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
     }
     .scene {
         width: 70%;
-        height: 100%;
+        height: 200%;
         /* space between card-scenes */
         margin: 3%;
     
@@ -124,7 +124,7 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
     
     /* card */
     .card {
-        width: 100%;
+        width: 90%;
         height: 100%;
         position: relative;
     
@@ -140,7 +140,7 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
     .face {
         position: absolute;
         height: 100%;
-        width: 100%;
+        width: 90%;
        
         /* hide back face   */
         backface-visibility: hidden;
