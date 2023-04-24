@@ -107,16 +107,17 @@ img {
     }
 
     p { 
-        font-size: x-small;
+        font-size: small;
 
         }
 
     h2{
-        font-size: medium;
+        font-size: large;
+
     }
     .scene {
-        width: 50%;
-        height: 70%;
+        width: 70%;
+        height: 100%;
         /* space between card-scenes */
         margin: 3%;
     
@@ -158,6 +159,7 @@ img {
     }
     
     .front {
+        text-align:center;
         background: #5792CF;
         border-radius: 5% 5% 5% 5%;
         filter: drop-shadow(0rem .25rem 0rem #0D56D9);
