@@ -1,5 +1,5 @@
 @import url(outfit.css);
-@import url(switzer.css);
+@import url();
 
 /* diagnostic styling 
 * {
@@ -14,16 +14,6 @@ body {
     height: 100vh;
 }
 
-h2{ display: block;
-    font-family: 'Switzer';
-    color: #ECF7DD;
-}
-
-p {
-font-family:'Switzer-Medium';
-
-
-}
 
 /* scene */
 .scene {
@@ -41,7 +31,6 @@ font-family:'Switzer-Medium';
     width: 100%;
     height: 100%;
     position: relative;
-
     cursor: grab;
     transition: transform 1s;
 
@@ -69,10 +58,18 @@ img {
 
 }
 
+.title{
+    font-family: monospace;
+    color: #ECF7DD;
+display:flex;
+
+
+}
+
 .front {
     background: #5792CF;
     border-radius: 5% 5% 5% 5%;
-    filter: drop-shadow(0rem .25rem 0rem #0D56D9);
+filter: drop-shadow( 0em .5em 0em #0D56D9 );
 }
 
 .back {
@@ -80,7 +77,7 @@ img {
     /* flip it default   */
     transform: rotateY(180deg);
     border-radius: 5% 5% 5% 5%;
-    filter: drop-shadow(0rem .25rem 0rem #0D56D9);
+ 
 }
 
 /* flip card
