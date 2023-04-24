@@ -1,5 +1,4 @@
-@import url(outfit.css);
-@import url();
+@import url(satoshi.css);
 
 /* diagnostic styling 
 * {
@@ -8,6 +7,7 @@
 */
 /* layout */
 body {
+    background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,10 +24,14 @@ body {
 
     /* set perspective   */
     perspective: 600px;
+    
 }
 
 /* card */
 .card {
+    display: flex;
+    align-content:center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     position: relative;
@@ -41,6 +45,13 @@ body {
 
 /* face */
 .face {
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-direction:column;
+    line-break:loose;
+    
     position: absolute;
     height: 100%;
     width: 100%;
@@ -59,20 +70,29 @@ img {
 }
 
 .title{
-    font-family: monospace;
+    text-align:center;
+   max-width: 80%;
+    font-family: 'Satoshi-Regular';
     color: #ECF7DD;
-display:flex;
+
 
 
 }
 
 .front {
+    text-align:center;
     background: #5792CF;
     border-radius: 5% 5% 5% 5%;
 filter: drop-shadow( 0em .5em 0em #0D56D9 );
 }
 
+.description {
+    max-width:90%;
+
+}
+
 .back {
+  
     background:#dcf8ff;
     /* flip it default   */
     transform: rotateY(180deg);
@@ -162,6 +182,11 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
         filter: drop-shadow(0rem .25rem 0rem #0D56D9);
     }
     
+    .description {
+        max-width:90%;
+    
+    }
+
     .back {
         background:#dcf8ff;
         /* flip it default   */
