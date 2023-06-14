@@ -15,6 +15,8 @@ Promotional site to showcase Dept of Design Certificates.
     - [`transform-style` explanation](https://www.kevinpowell.co/article/transform-style/)
 - [Card Flip article](https://3dtransforms.desandro.com/card-flip)
 - [CSS Transforms & Transitions video course](https://www.linkedin.com/learning/css-transforms-and-transitions)
+- [CSS Media Help](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)
+- [Print Styling](https://developer.mozilla.org/en-US/docs/Web/CSS/@page)
 
 ## Citations
 - [3D Card Flip](https://codepen.io/desandro/pen/LmWoWe)
