@@ -7,21 +7,47 @@
         font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
         /* increase font size */
         font-size: 1.25em;
-}
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+
+    img{
+    height: 300px;
+        width: 300px;
+    }
 
     /* printer anchor links */
     a[href]::after {
         content: " " attr(href); 
     }
 
-    /* turn paragraphs into colums */
-    .face p {
+   
+ p {
+   
+     margin-top: 30px;
+     margin-right:45px;
+ 
+    }
+
+    h1{
+        color:#0e3b3d;
+    }
+
+    .card {
+        
+        display:flex;
+        align-content: center;
+        justify-content: center;
         columns: 2;
+        margin-bottom:100px;
+        margin-left: 40px;
+        margin-right: 20px;
+        column-gap:10px;
     }
 
     @page {
         /* reset page margins */
         margin: .25in;
     }
-
 }
