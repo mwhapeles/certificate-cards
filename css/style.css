@@ -18,8 +18,8 @@ body {
 
 /* scene */
 .scene {
-    width: 300px;
-    height: 400px;
+    width: 90%;
+    height: 80%;
     /* space between card-scenes */
     margin: 16px;
 
@@ -65,44 +65,49 @@ img {
     display:flex;
     margin:auto;
     align-content: center;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 80%;
+    max-height: 80%;
 
 }
 
 
 #pro{
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 
 
 .title{
+    display:flex;
+    justify-content:center;
+    align-items: center;
     text-align:center;
-   max-width: 80%;
+   max-width: 60%;
     font-family: 'Outfit-Regular';
     color: #ECF7DD;
-
-
-
 }
 
 .front {
+    display:flex;
+    justify-content:center;
+    align-items: center;
     text-align:center;
     background: #5792CF;
     border-radius: 5% 5% 5% 5%;
-filter: drop-shadow( 0em .5em 0em #0D56D9 );
+filter: drop-shadow( 0em .5em .3em #a4c0f5 );
 }
 
 .description {
     max-width:80%;
+    min-height:50%;
     font-family:'Satoshi-Light';
     line-break: loose;
 
 }
 
 .back {
+    
   
     background:#dcf8ff;
     /* flip it default   */
@@ -147,7 +152,7 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
         width: 70%;
         height: 200%;
         /* space between card-scenes */
-        margin: 5%;
+        margin: 30px;
     
         /* set perspective   */
         perspective: 600px;
@@ -156,7 +161,7 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
     /* card */
     .card {
         width: 95%;
-        height: 120%;
+        height: 150%;
         position: relative;
     
         cursor: grab;
@@ -187,6 +192,8 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
     }
 .title {
     font-family: 'Satoshi-Regular';
+    max-width: 50%;
+    max-height: 20%;
 }
 
 
@@ -205,9 +212,9 @@ filter: drop-shadow( 0em .5em 0em #0D56D9 );
     
     .description {
         font-family:'Satoshi-Light';
-        line-height: 80%;
-        max-width:90%;
-        max-height: 100;
+        line-height: 70%;
+        max-width:80%;
+    min-height:50%;
     
     }
 
